@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="436.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.controller.TableController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="388.0" prefWidth="651.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="28.0" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="392.0" text="NAME" />
+            <TableColumn fx:id="costColumn" prefWidth="64.0" text="COST" />
+            <TableColumn fx:id="CategoryColumn" prefWidth="79.0" text="CATEGORY" />
+            <TableColumn fx:id="warehouseColumn" prefWidth="87.0" text="WAREHOUSE" />
+        </columns>
+      </TableView>
+      <Button layoutX="300.0" layoutY="397.0" mnemonicParsing="false" onAction="#actionCreate" text="Create" />
+      <Button layoutX="549.0" layoutY="397.0" mnemonicParsing="false" onAction="#actionEdit" text="Edit" />
+      <Button layoutX="586.0" layoutY="397.0" mnemonicParsing="false" onAction="#actionDelete" text="Delete" />
+   </children>
+</AnchorPane>
